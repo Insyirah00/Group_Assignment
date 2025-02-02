@@ -1,0 +1,186 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background-color: #FBF8DD;
+	font-family: "Outfit", serif;
+}
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #282b72;
+}
+nav img 
+{
+	width: 100px;
+}
+.navbar 
+{
+	flex: 1;
+	text-align: right;
+	background-color: #282b72;
+}
+.navbar ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.navbar ul li a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+.navbar ul li::after
+{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f4b118;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover::after
+{
+	width: 100%;
+}
+
+h1
+{
+	text-align: center;
+	color: black;
+	padding: 20px;
+}
+p{
+	text-align: center;
+}
+
+.ourmenu nav
+{
+	background-color:  #282b72;
+	display: grid;
+	place-items: center;
+	padding: 2% 6%;
+}
+
+.ourmenu nav ul
+{
+	list-style-type: none;
+	margin-left: 410px;
+}
+
+.ourmenu nav ul a
+{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+	transition: 0.2s ease-in;
+	font-size: 18px;
+}
+
+.ourmenu nav ul a:hover
+{
+	background-color:  #f4b118;
+	color: white;
+}
+
+.items
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+
+}
+.item img
+{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	cursor: pointer;
+	transition: 0.2s ease;
+	box-shadow: 0 8px 14px 0 rgba(0, 0, 0, .4);
+	border-radius: 18px;
+}
+.item img:hover
+{
+	transform: scale(1.04);
+}
+.item h4
+{
+	padding: 5px;
+	text-align: center;
+}
+.item button
+{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+	transition: 0.2s all;
+}
+
+.item button:hover
+{
+	transform: scale(1.08);
+}
+
+/*------footer------*/
+
+.footer
+{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	background-color: #282b72;
+	color: white;
+}
+
+.footer h4
+{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.icons .fa
+{
+	margin: 10px;
+	cursor: pointer;
+	padding: 15px;
+	color: white;
+}
+
+.icons .fab
+{
+	margin: 10px;
+	cursor: pointer;
+	padding: 15px;
+	color: white;
+}
+
+.icons a:visited
+{
+	color: white;
+	text-decoration: none;
+}
